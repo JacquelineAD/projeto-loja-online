@@ -265,3 +265,320 @@ section{
     font-weight: 400;
     font-size: 16px;
 }
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-radius: 7px;
+}
+
+.products .box-container .box{
+    flex: 1 1 350px;
+    box-shadow:  1px 1px 10px var(--corsombra);
+    border-radius: 7px;
+    position: relative;
+}
+
+.products .box-container .box .discount{
+    position: absolute;
+    top: 26px;
+    left: 16px;
+    padding: 11px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cortitulo);
+    background: var(--cordestaques);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 32px;
+    overflow: hidden;
+}
+
+.products .box-container .box .image img{
+    height: 400px;
+    
+}
+
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.products .box-container .box:hover .image .icons{
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.products .box-container .box .image .icons a{
+    height: 37px;
+    line-height: 40px;
+    font-family: var(--font-destaque);
+    font-size: 25px;
+    align-items: center;
+    width: 50%;
+    text-decoration: none;
+    background: var(--cortitulo);
+    color: var(--cor1);
+}
+
+.products .box-container .box .image .icons .cart-btn{
+    border-left: 1px solid var(--cor1);
+    border-right: 1px solid var(--cor1);
+}
+
+.products .box-container .box .image .icons a:hover{
+    background: var(--cordestaques);
+    transform: scale(1.1);
+    color: var(--cortitulo);
+}
+
+.products .box-container .box .image .icons i{
+    font-size: 32px;
+}
+
+.products .box-container .box .content{
+    padding: 32px;
+    text-align: center;
+
+}
+
+.products .box-container .box .content h3{
+    font-family: var(--font-título);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--cortitulo);
+}
+
+.products .box-container .box .content .price{
+    font-family: var(--font-destaque);
+    font-size: 20px;
+    color: var(--cor2);
+    font-weight: bold;
+    padding-top: 16px;
+}
+
+.products .box-container .box .content .price span{
+    font-family: var(--font-destaque);
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.review .heading-client{
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--cortitulo);
+    text-shadow: 2px 2px 5px var(--cor1);
+    background: var(--cordestaques);
+    padding: 5px 0px;
+    margin: 10px 0px;
+}
+
+.review .box-conta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+}
+
+.review .box-conta .box-client{
+    flex: 1 1 350px;
+    box-shadow:  1px 1px 10px var(--corsombra);
+    border-radius: 7px;
+    padding: 32px 18px;
+    position: relative;
+}
+
+.review .box-conta .box-client .stars{
+    color: var(--cortitulo);
+    font-size: 30px;
+}
+
+.review .box-conta .box-client p{
+    font-size: 15px;
+    font-family: var(--font-destaque);
+    color: var(--cor2);
+    margin-top: 10px;
+    align-items: center;
+}
+
+.review .box-conta .box-client .user{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.review .box-conta img{
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    margin: 15px 0px;
+}
+
+.review .box-conta h3{
+    font-family: var(--font-título);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--cor2);
+    padding-left: 20px;
+}
+
+.review .box-conta span{
+    font-family: var(--font-destaque);
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.review .box-conta .box-client .quoate{
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    font-size: 70px;
+    color: var(--corsombra);
+}
+
+.contact .heading-contact{
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--cortitulo);
+    text-shadow: 2px 2px 5px var(--cor1);
+    background: var(--cordestaques);
+    padding: 5px 0px;
+    margin: 10px 0px;
+}
+
+.contact .form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+
+.contact .form form{
+    flex: 1 1 350px;
+    padding: 32px 40px;
+    box-shadow:  1px 1px 10px var(--corsombra);
+    border-radius: 7px;
+
+}
+
+.contact .form .box{
+    display: flex;
+    font-size: 20px;
+    font-family: var(--font-destaque);
+    color: var(--corsombra);
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid var(--corsombra);
+}
+
+.contact .form .btn{
+    font-family: var(--font-destaque);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: var(--cortitulo);
+    color: var(--cor1);
+    border-radius: 40px;
+    padding: 10px 30px;
+    border: 1px solid var(--cortitulo);
+    
+}
+
+.contact .form .btn:hover{
+    background: var(--cordestaques);
+    color: var(--cortitulo);
+    transition: 0.5s;
+    border: 1px solid var(--cordestaques);
+}
+
+.contact .form .image{
+    flex: 1 1 350px;
+    
+}
+
+.contact .form .image img{
+    width: 100%;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer .box-container .box{
+    flex: 1 1 350px;
+}
+
+.footer .box-container .box h3{
+    font-family: var(--font-destaque);
+    color: var(--cortitulo);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer .box-container .box a{
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--font-destaque);
+    font-weight: bold;
+    color: var(--cor2);
+    padding-top: 15px;
+
+}
+
+.footer .box-container .box a:hover{
+    color: var(--cortitulo);
+    transition: 0.5s;
+}
+
+.footer .box-container .box .btn-social{
+    display: inline-flex;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.footer .box-container .box .btn-social:hover{
+    color: var(--cortitulo);
+    transition: 0.5s;
+    text-decoration: none;
+    
+}
+
+.footer .credits{
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-size: 30px;
+    background: var(--cordestaques);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.footer .credits a{
+    text-decoration: none;
+}
+
+.footer .credits a:hover{
+    color: var(--cortitulo);
+}
